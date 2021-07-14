@@ -231,8 +231,8 @@
                 <h2>Contato</h2>
             </div>
             
-            <div class="formulario">
-                <form>
+            <div  class="formulario">
+                <form id="my-form" action="https://formspree.io/f/xwkanolz" method="POST">
                     <div class="form-group">
                         <div class="controls">
                             <label for="nome">Nome:</label>
@@ -263,8 +263,11 @@
                     </div>
 
                     <div class="form-group m-auto">
-                        <button class="btn-form-send">Enviar</button>
+                        <button class="btn-form-send" id="my-form-button">Enviar</button>
                     </div>
+                    
+                    <p id="my-form-status"></p>
+
                 </form>
             </div>
         </div>
@@ -287,4 +290,7 @@
 <!--Owl Carousel-->
 <script src="./assets/js/owl-carrousel/owl.carousel.min.js"></script>
 <script src="./assets/js/owl-carrousel/owl.start.function.js"></script>
+
+<!--Form-->
+<script src="./assets/js/form/send.js"></script>
 </html>
